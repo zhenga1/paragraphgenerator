@@ -1,0 +1,117 @@
+body {
+    margin: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h3 {
+    cursor: default;
+}
+
+#header-container {
+    display: inline-flex;
+    margin-bottom: 60px;
+}
+
+#title {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#52ACFF 50%, #FFE32C 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+#utils-container {
+    height: 6vh;
+    width: 25vw;
+    min-height: fit-content;
+    margin: 35px 30px 30px 60px;
+    padding: 5px;
+    border: none;
+    border-radius: 30px;
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    min-width: 350px;
+    min-height: 350px;
+    margin-left: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #D3D3D3;
+}
+
+#input-container {
+    height: 50vh;
+    width: 50vw;
+}
+
+#output-container {
+    height: 50vh;
+    width: 35vw;
+    margin-left: 30px;
+    color: #808080;
+    font-size: 18px;
+    overflow-y: scroll;
+}
+
+
+.prompt-title {
+    font-size: 20px;
+    background: -webkit-linear-gradient(#52ACFF 35%, #FFE32C 100%);
+    margin-bottom: 10px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+}
+
+.user-input {
+    height: 30px;
+    width: 500px;
+    font-size: 17px;
+    color: #808080;
+    margin-top: 10px;
+    border: solid 2px #52ACFF;
+    transition: 0.3s;
+}
+
+.user-input:focus {
+    border-bottom: solid 2px #FFE32C;
+    outline: none;
+}
+
+.btn {
+    min-height: 35px;
+    min-width: 115px;
+    margin: 10px 10px 15px;
+    background: linear-gradient(90deg, var(--gradient-color-1, #f6d365), var(--gradient-color-2, #fda085) 51%, var(--gradient-color-1, #f6d365)) var(--color-transition, 0)/ 200%;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 5px #D3D3D3;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    --color-transition: 100%;
+    cursor: pointer;
+}
+
+#generate-btn {
+    margin-top: 50px;
+    margin-left: 0;
+    --gradient-color-1: #52ACFF;
+    --gradient-color-2: #FFE32C;
+}
