@@ -1,4 +1,4 @@
-# Paragraph Generator
+# Writeeasy
 
 A service that saves students time by helping them write application essays. 
 
